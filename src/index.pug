@@ -1,0 +1,60 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Introduction to React Native
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+    link(href='/favicon.ico' rel='shortcut icon' type='image/x-icon')
+  body
+
+    article.deck
+
+      section
+        h1 Introduction to React Native
+        ul
+          li A talk by <a href="https://github.com/cedced19">Cédric JUNG</a>
+
+      section
+        h2 Quick history
+        ul.build.build-items
+          li React: 2013
+          li React Native for Android and iOS: 2015
+          li React Native for Windows: 2016 <span class="build">(Is it important ? <i class="em em-stuck_out_tongue_winking_eye"></i> )</span>
+
+      section
+        h2 What about Cordova <i class="em em-grey_question"></i>
+        img(src="images/cordova.png")
+
+      section
+        h2 Style
+        h3 Familiar and creepy
+        pre
+          code.language-javascript.
+            StyleSheet.create({
+              container: {
+                flex: 1,
+                justifyContent: 'center',
+                alignItems: 'center',
+                backgroundColor: '#F5FCFF',
+              },
+              welcome: {
+                fontSize: 20,
+                textAlign: 'center',
+                margin: 10,
+              },
+              ...
+            });
+
+      section
+        h2 Just the beginning…
+        ul.build.build-items
+          li Facebook will re-write inside components of React Native 
+        br
+        ul.build
+          li
+            strong Enjoy! :)
+            br
+            <a href="https://github.com/cedced19">@cedced19</a>
+
+    script(src='build/build.js')
