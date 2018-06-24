@@ -62,3 +62,4 @@ From there, they can be viewed in a browser from anywhere on the web.
 * [wikipedia.org](https://en.wikipedia.org/wiki/React_(JavaScript_library))
 * [developpez.com](https://developpez.com/actu/210653/Facebook-annonce-la-reecriture-des-composants-internes-de-son-Framework-React-Native-pour-faciliter-son-utilisation-avec-les-applications-hybrides/)
 * [quora.com](https://quora.com/How-does-React-Native-work)
+* [toptal.com](https://toptal.com/mobile/comparing-react-native-to-cordova)
