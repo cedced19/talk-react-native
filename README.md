@@ -63,3 +63,5 @@ From there, they can be viewed in a browser from anywhere on the web.
 * [developpez.com](https://developpez.com/actu/210653/Facebook-annonce-la-reecriture-des-composants-internes-de-son-Framework-React-Native-pour-faciliter-son-utilisation-avec-les-applications-hybrides/)
 * [quora.com](https://quora.com/How-does-React-Native-work)
 * [toptal.com](https://toptal.com/mobile/comparing-react-native-to-cordova)
+* [vue-native.io](https://vue-native.io)
+* [expo.io](https://docs.expo.io/versions/latest/introduction/faq.html#what-is-the-difference-between-expo-and-react-native)

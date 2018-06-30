@@ -16,6 +16,10 @@ html
           li A talk by <a href="https://github.com/cedced19">Cédric JUNG</a>
 
       section
+        h2 Why do I use React Native ?
+        img(src="images/1er_couv.jpg" height="75%" width="37.5%")
+
+      section
         h2 Quick history
         ul.build.build-items
           li 2011: Cordova
@@ -49,8 +53,16 @@ html
         img(src="images/react-running.svg")
 
       section
+        h2 Quick presentation of Expo
+        ul.build.build-items
+          li Facebook login
+          li instant updating
+          li asset management
+          li easier updating to new React Native releases
+          li <b><u>but</u> no native modules</b> <i class="em em--1 build"></i>
+
+      section
         h2 Style
-        h3 Familiar and creepy
         pre
           code.language-javascript.
             StyleSheet.create({
@@ -69,6 +81,63 @@ html
             });
       
       section
+        h2 Tools
+
+      section 
+        h2 Init new app faster with a CLI 
+        pre
+          code.language-bash.
+             npm install -g create-react-native-app
+             create-react-native-app my-app
+             cd my-app/
+             npm run eject # I do not love Expo 
+             npm start
+
+      section
+        h2 NativeBase
+        h3 the “Bootstrap of React Native” 
+        img(src="images/native_base.png" width="50%" height="55%")
+
+      section
+        h2 React Navigation
+        h3 Routing and navigation for your React Native apps
+
+      section
+        pre
+          code.language-javascript.
+            import React from 'react';
+            import { View, Text } from 'react-native';
+            import { createStackNavigator } from 'react-navigation';
+
+            class HomeScreen extends React.Component {
+              render() {
+                  return (
+                  &lt;View&gt;
+                    &lt;Text&gt;Home Screen&lt;/Text&gt;
+                  &lt;/View&gt;
+                );
+              }
+            }
+            class SecondScreen extends React.Component {
+              render() {
+                  return (
+                  &lt;View&gt;
+                    &lt;Text&gt;Second Screen&lt;/Text&gt;
+                  &lt;/View&gt;
+                );
+              }
+            }
+            export default createStackNavigator({
+              Home: {
+                screen: HomeScreen
+              },
+              Second: {
+                screen: SecondScreen
+              },
+            });
+        
+
+      section
         h2 Building stack 
         img(src="images/screenshot.png" width="100%")
 
@@ -85,14 +154,22 @@ html
         img(src="images/error_running_bundle.png" width="70%") 
 
       section
+        h2 Problems
+        ul.build.build-items
+          li Dependencies 
+          li You are dependent on plugin
+          
+
+      section
         h2 Just the beginning…
         ul.build.build-items
-          li Facebook will re-write inside components of React Native 
+          li Facebook will re-write inside components of React Native
+          li Some alternative are rising up: <i>Vue Native</i>
         br
         ul.build
           li
             strong Enjoy! :)
             br
-            <a href="https://github.com/cedced19">@cedced19</a>
+            <a href="https://github.com/cedced19">Cédric JUNG</a>
 
     script(src='build/build.js')
