@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Introduction to React Native</title>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  </head>
+  <body>
+    <article class="deck">
+      <section>
+        <h1>Introduction to React Native</h1>
+        <ul>
+          <li>A talk by <a href="https://github.com/cedced19">Cédric JUNG</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Why do I use React Native ?</h2><img src="images/1er_couv.jpg" height="75%" width="37.5%">
+      </section>
+      <section>
+        <h2>Quick history</h2>
+        <ul class="build build-items">
+          <li>2011: Cordova</li>
+          <li>2013: React</li>
+          <li>2015: React Native for Android and iOS</li>
+          <li>2016: React Native for Windows <span class="build">(Is it important ? <i class="em em-stuck_out_tongue_winking_eye"></i> )</span></li>
+        </ul>
+      </section>
+      <section>
+        <h2>What about Cordova <i class="em em-grey_question"></i></h2><img src="images/cordova.png">
+      </section>
+      <section>
+        <h2>Cordova </h2>
+        <ul class="build-items">
+          <li>single-page application</li>
+          <li>running inside the default Webview 
+            <ul>
+              <li>Chrome browser for Android</li>
+              <li>Safari browser for iOS <i class="em em--1 build"></i></li>
+            </ul>
+          </li>
+          <li>development Freedom <i class="em em---1"></i> <i class="build">(Ionic, Ace, Onsen)</i></li>
+        </ul>
+      </section>
+      <section>
+        <h2>React Native</h2>
+        <ul class="build build-items">
+          <li>React Native ≈ React <b class="build">⇒ Community <i class="em em---1"></i></b> </li>
+          <li>clear separation between iOS and Android <i class="em em---1"></i></li>
+          <li>running in JavaScriptCore <i class="em em---1"></i></li>
+          <li>technology stack "imposed" <i class="em em-rocket"></i></li>
+        </ul>
+      </section>
+      <section><img src="images/react-running.svg"></section>
+      <section>
+        <h2>Quick presentation of Expo</h2>
+        <ul class="build build-items">
+          <li>Facebook login</li>
+          <li>instant updating</li>
+          <li>asset management</li>
+          <li>easier updating to new React Native releases</li>
+          <li><b><u>but</u> no native modules</b> <i class="em em--1 build"></i></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Style</h2>
+        <pre><code class="language-javascript">StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  ...
+});
+</code></pre>
+      </section>
+      <section>
+        <h2>Tools</h2>
+      </section>
+      <section> 
+        <h2>Init new app faster with a CLI </h2>
+        <pre><code class="language-bash">npm install -g create-react-native-app
+create-react-native-app my-app
+cd my-app/
+npm run eject # I do not love Expo 
+npm start
+</code></pre>
+      </section>
+      <section>
+        <h2>NativeBase</h2>
+        <h3>the “Bootstrap of React Native” </h3><img src="images/native_base.png" width="50%" height="55%">
+      </section>
+      <section>
+        <h2>React Navigation</h2>
+        <h3>Routing and navigation for your React Native apps</h3>
+      </section>
+      <section>
+        <pre><code class="language-javascript">import React from 'react';
+import { View, Text } from 'react-native';
+import { createStackNavigator } from 'react-navigation';
+
+class HomeScreen extends React.Component {
+  render() {
+      return (
+      &lt;View&gt;
+        &lt;Text&gt;Home Screen&lt;/Text&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+class SecondScreen extends React.Component {
+  render() {
+      return (
+      &lt;View&gt;
+        &lt;Text&gt;Second Screen&lt;/Text&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+export default createStackNavigator({
+  Home: {
+    screen: HomeScreen
+  },
+  Second: {
+    screen: SecondScreen
+  },
+});
+
+</code></pre>
+      </section>
+      <section>
+        <h2>Building stack </h2><img src="images/screenshot.png" width="100%">
+      </section>
+      <section>
+        <h2>Error during building</h2><img src="images/error_building.png" width="100%">
+      </section>
+      <section>
+        <h2>Error displayed on the screen</h2><img src="images/error_running.png" width="30%" height="70%">
+      </section>
+      <section>
+        <h2>Error displayed in the console</h2><img src="images/error_running_bundle.png" width="70%">
+      </section>
+      <section>
+        <h2>Problems</h2>
+        <ul class="build build-items">
+          <li>Dependencies </li>
+          <li>You are dependent on plugin</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Just the beginning…</h2>
+        <ul class="build build-items">
+          <li>Facebook will re-write inside components of React Native</li>
+          <li>Some alternative are rising up: <i>Vue Native</i></li>
+        </ul><br>
+        <ul class="build">
+          <li><strong>Enjoy! :)</strong><br><a href="https://github.com/cedced19">Cédric JUNG</a></li>
+        </ul>
+      </section>
+    </article>
+    <script src="build/build.js"></script>
+  </body>
+</html>
